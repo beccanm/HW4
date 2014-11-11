@@ -1,0 +1,22 @@
+|P2
+Clock => ~NO_FANOUT~
+A[0] => ~NO_FANOUT~
+A[1] => ~NO_FANOUT~
+A[2] => ~NO_FANOUT~
+B[0] => ~NO_FANOUT~
+B[1] => ~NO_FANOUT~
+B[2] => ~NO_FANOUT~
+C[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+D[0] <= <GND>
+D[1] <= <GND>
+D[2] <= <GND>
+C0 => ~NO_FANOUT~
+Ad => ~NO_FANOUT~
+Sh => ~NO_FANOUT~
+C1 => ~NO_FANOUT~
+Ad1 => ~NO_FANOUT~
+Sh1 => ~NO_FANOUT~
+
+
