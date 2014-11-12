@@ -1,0 +1,103 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE ieee.std_logic_unsigned.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity MISR is
+  port (
+    
+    CLOCK_50 	: in std_logic                    -- 50 MHz
+    );
+  
+end MISR
+
+architecture schematic of MISR is
+
+
+COMPONENT DFF1 is
+    Port ( D : in std_logic;
+           CLK : in std_logic;
+           Q : out std_logic;
+           QN : out std_logic);
+END COMPONENT;
+
+
+
+TYPE STATE_TYPE IS (s0, s1, s2, s3, s4, s5, s6, s7, s8); 
+SIGNAL current_state, next_state: STATE_TYPE;
+
+signal debounce_int:std_logic;
+signal sel_int: std_logic;
+
+signal mux_int:std_logic_vector(n-1 downto 0);
+signal ext_int:std_logic_vector(n-1 downto 0);
+
+signal d0_int:std_logic_vector(n-1 downto 0);
+signal d1_int:std_logic_vector(n-1 downto 0);
+signal d2_int:std_logic_vector(n-1 downto 0);
+signal d3_int:std_logic_vector(n-1 downto 0);
+signal d4_int:std_logic_vector(n-1 downto 0);
+signal d5_int:std_logic_vector(n-1 downto 0);
+signal d6_int:std_logic_vector(n-1 downto 0);
+signal d7_int:std_logic_vector(n-1 downto 0);
+
+
+BEGIN
+BUTTOM : Debounce port map(CLOCK_50,KEY(0),debounce_int); 
+REG_1  : Reg_n port map (debounce_int,SW(0),mux_int,d0_int);
+REG_2  : Reg_n port map (debounce_int,SW(0),d0_int,d1_int);
+REG_3  : Reg_n port map (debounce_int,SW(0),d1_int,d2_int);
+REG_4  : Reg_n port map (debounce_int,SW(0),d2_int,d3_int);
+REG_5  : Reg_n port map (debounce_int,SW(0),d3_int,d4_int);
+REG_6  : Reg_n port map (debounce_int,SW(0),d4_int,d5_int);
+REG_7  : Reg_n port map (debounce_int,SW(0),d5_int,d6_int);
+REG_8  : Reg_n port map (debounce_int,SW(0),d6_int,d7_int);
+MUX_1   : Mux_2n port map (SW(0),sel_int,d7_int,ext_int,mux_int);
+
+
+   PROCESS (current_state)
+	BEGIN  			 
+         CASE current_state IS
+            WHEN s0=> 
+			   sel_int <= '1'; next_state <= s1; ext_int <= "0001001"; -- H
+				WHEN s1=> 
+				sel_int <= '1'; next_state <= s2; ext_int <= "0000110"; -- E
+				WHEN s2=> 
+				sel_int <= '1'; next_state <= s3; ext_int <= "1000111"; -- L 
+				WHEN s3=> 
+			   sel_int <= '1'; next_state <= s4; ext_int <= "1000111"; -- L
+				WHEN s4=>
+				sel_int <= '1'; next_state <= s5; ext_int <= "1000000"; -- O
+				WHEN s5=> 
+				sel_int <= '1'; next_state <= s6; ext_int <= "0111111";  -- 
+				WHEN s6=> 
+				sel_int <= '1'; next_state <= s7; ext_int <= "0111111"; -- 
+				WHEN s7=> 
+				sel_int <= '1'; next_state <= s8; ext_int <= "0111111"; -- 
+				WHEN s8=> 
+				sel_int <= '0'; next_state <= s8; ext_int <= "0111111"; 
+         END CASE;
+			
+   END PROCESS;
+   
+   PROCESS (debounce_int,SW(0))
+   BEGIN
+		IF (debounce_int'EVENT AND debounce_int ='1') THEN
+			IF SW(0) = '1' THEN current_state <= s0; 
+			ELSE current_state <= next_state; 
+			END IF;			
+		END IF;	
+   END PROCESS;
+	
+	   LEDG(6 downto 0) <= d0_int;
+		HEX0 <= d0_int; 	
+		HEX1 <= d1_int;
+		HEX2 <= d2_int;
+		HEX3 <= d3_int;
+		HEX4 <= d4_int;
+		HEX5 <= d5_int;
+		HEX6 <= d6_int;
+		HEX7 <= d7_int;
+	
+END pipeline;
+
