@@ -1,0 +1,477 @@
+|Problem_4_30
+CLOCK_50 => Reg_4:Reg_Xin.clk
+CLOCK_50 => Reg_4:Reg_Yin.clk
+CLOCK_50 => Reg_8:Reg_Product_Out.clk
+CLOCK_50 => DFF1:DFF1_P0_0.CLK
+CLOCK_50 => DFF1:DFF1_P0_1.CLK
+CLOCK_50 => DFF1:DFF1_HA1_S10_0.CLK
+CLOCK_50 => DFF1:DFF1_HA1_S10_1.CLK
+CLOCK_50 => DFF1:DFF1_FA1_S11_0.CLK
+CLOCK_50 => DFF1:DFF1_X0Y2_0.CLK
+CLOCK_50 => DFF1:DFF1_HA3_S20_1.CLK
+CLOCK_50 => DFF1:DFF1_FA2_S12_0.CLK
+CLOCK_50 => DFF1:DFF1_X1Y2_0.CLK
+CLOCK_50 => DFF1:DFF1_FA3_S21_1.CLK
+CLOCK_50 => DFF1:DFF1_X0Y3_0.CLK
+CLOCK_50 => DFF1:DFF1_X0Y3_1.CLK
+CLOCK_50 => DFF1:DFF1_HA2_0.CLK
+CLOCK_50 => DFF1:DFF1_X2Y2_0.CLK
+CLOCK_50 => DFF1:DFF1_FA4_S22_1.CLK
+CLOCK_50 => DFF1:DFF1_X1Y3_0.CLK
+CLOCK_50 => DFF1:DFF1_X1Y3_1.CLK
+CLOCK_50 => DFF1:DFF1_C13_0.CLK
+CLOCK_50 => DFF1:DFF1_X3Y2_0.CLK
+CLOCK_50 => DFF1:DFF1_FA5_S23_1.CLK
+CLOCK_50 => DFF1:DFF1_X2Y3_0.CLK
+CLOCK_50 => DFF1:DFF1_X2Y3_1.CLK
+CLOCK_50 => DFF1:DFF1_C23_1.CLK
+CLOCK_50 => DFF1:DFF1_X3Y3_0.CLK
+CLOCK_50 => DFF1:DFF1_X3Y3_1.CLK
+X[0] => Reg_4:Reg_Xin.d_in[0]
+X[1] => Reg_4:Reg_Xin.d_in[1]
+X[2] => Reg_4:Reg_Xin.d_in[2]
+X[3] => Reg_4:Reg_Xin.d_in[3]
+Y[0] => Reg_4:Reg_Yin.d_in[0]
+Y[1] => Reg_4:Reg_Yin.d_in[1]
+Y[2] => Reg_4:Reg_Yin.d_in[2]
+Y[3] => Reg_4:Reg_Yin.d_in[3]
+P[0] <= Reg_8:Reg_Product_Out.d_out[0]
+P[1] <= Reg_8:Reg_Product_Out.d_out[1]
+P[2] <= Reg_8:Reg_Product_Out.d_out[2]
+P[3] <= Reg_8:Reg_Product_Out.d_out[3]
+P[4] <= Reg_8:Reg_Product_Out.d_out[4]
+P[5] <= Reg_8:Reg_Product_Out.d_out[5]
+P[6] <= Reg_8:Reg_Product_Out.d_out[6]
+P[7] <= Reg_8:Reg_Product_Out.d_out[7]
+
+
+|Problem_4_30|Reg_4:Reg_Xin
+clk => d_out[0]~reg0.CLK
+clk => d_out[1]~reg0.CLK
+clk => d_out[2]~reg0.CLK
+clk => d_out[3]~reg0.CLK
+d_in[0] => d_out[0]~reg0.DATAIN
+d_in[1] => d_out[1]~reg0.DATAIN
+d_in[2] => d_out[2]~reg0.DATAIN
+d_in[3] => d_out[3]~reg0.DATAIN
+d_out[0] <= d_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[1] <= d_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[2] <= d_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[3] <= d_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|Reg_4:Reg_Yin
+clk => d_out[0]~reg0.CLK
+clk => d_out[1]~reg0.CLK
+clk => d_out[2]~reg0.CLK
+clk => d_out[3]~reg0.CLK
+d_in[0] => d_out[0]~reg0.DATAIN
+d_in[1] => d_out[1]~reg0.DATAIN
+d_in[2] => d_out[2]~reg0.DATAIN
+d_in[3] => d_out[3]~reg0.DATAIN
+d_out[0] <= d_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[1] <= d_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[2] <= d_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[3] <= d_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|Reg_8:Reg_Product_Out
+clk => d_out[0]~reg0.CLK
+clk => d_out[1]~reg0.CLK
+clk => d_out[2]~reg0.CLK
+clk => d_out[3]~reg0.CLK
+clk => d_out[4]~reg0.CLK
+clk => d_out[5]~reg0.CLK
+clk => d_out[6]~reg0.CLK
+clk => d_out[7]~reg0.CLK
+d_in[0] => d_out[0]~reg0.DATAIN
+d_in[1] => d_out[1]~reg0.DATAIN
+d_in[2] => d_out[2]~reg0.DATAIN
+d_in[3] => d_out[3]~reg0.DATAIN
+d_in[4] => d_out[4]~reg0.DATAIN
+d_in[5] => d_out[5]~reg0.DATAIN
+d_in[6] => d_out[6]~reg0.DATAIN
+d_in[7] => d_out[7]~reg0.DATAIN
+d_out[0] <= d_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[1] <= d_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[2] <= d_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[3] <= d_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[4] <= d_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[5] <= d_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[6] <= d_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[7] <= d_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_P0_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_P0_1
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|HalfAdder:HA1
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_HA1_S10_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_HA1_S10_1
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA1
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_FA1_S11_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X0Y2_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|HalfAdder:HA3
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_HA3_S20_1
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA2
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_FA2_S12_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X1Y2_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA3
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_FA3_S21_1
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X0Y3_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X0Y3_1
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|HalfAdder:HA4
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|HalfAdder:HA2
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_HA2_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X2Y2_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA4
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_FA4_S22_1
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X1Y3_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X1Y3_1
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA6
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_C13_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X3Y2_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA5
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_FA5_S23_1
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X2Y3_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X2Y3_1
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA7
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_C23_1
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X3Y3_0
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|DFF1:DFF1_X3Y3_1
+CLK => QN~reg0.CLK
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => QN~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA8
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+

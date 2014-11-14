@@ -1,0 +1,75 @@
+|MISR_8
+CLOCK_50 => Reg:R1.clk
+CLOCK_50 => Reg:R2.clk
+CLOCK_50 => Reg:R3.clk
+CLOCK_50 => Reg:R4.clk
+CLOCK_50 => Reg:R5.clk
+CLOCK_50 => Reg:R6.clk
+CLOCK_50 => Reg:R7.clk
+CLOCK_50 => Reg:R8.clk
+Z[8] => OUTD8.IN1
+Z[7] => OUTD7.IN1
+Z[6] => OUTD6.IN1
+Z[5] => OUTD5.IN1
+Z[4] => OUTD4.IN1
+Z[3] => OUTD3.IN1
+Z[2] => OUTD2.IN1
+Z[1] => OUTD1.IN1
+Q[8] <= Reg:R8.Q
+Q[7] <= Reg:R7.Q
+Q[6] <= Reg:R6.Q
+Q[5] <= Reg:R5.Q
+Q[4] <= Reg:R4.Q
+Q[3] <= Reg:R3.Q
+Q[2] <= Reg:R2.Q
+Q[1] <= Reg:R1.Q
+
+
+|MISR_8|Reg:R1
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MISR_8|Reg:R2
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MISR_8|Reg:R3
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MISR_8|Reg:R4
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MISR_8|Reg:R5
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MISR_8|Reg:R6
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MISR_8|Reg:R7
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MISR_8|Reg:R8
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\MARCO\Altera Projects\Hw4\Q6\simulation\modelsim
+Emisr_8
+Z1 w1415966835
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\MARCO\Altera Projects\Hw4\Q6\simulation\modelsim
+Z5 8C:/Users/MARCO/Altera Projects/Hw4/Q6/MISR_8.vhd
+Z6 FC:/Users/MARCO/Altera Projects/Hw4/Q6/MISR_8.vhd
+l0
+L4
+V6G^;VT;eUIKSX0ozWLYEa0
+!s100 ?2OD4aP1cKYMWRoij3GOB3
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1415967649.927000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Q6/MISR_8.vhd|
+Z10 !s107 C:/Users/MARCO/Altera Projects/Hw4/Q6/MISR_8.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Abehavior
+R2
+R3
+DEx4 work 6 misr_8 0 22 6G^;VT;eUIKSX0ozWLYEa0
+l31
+L11
+Vz5TU`GF0;;X>QhK][1B@R2
+!s100 @gRzHSR?mDFU^^fZ<k^>A2
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Ereg
+Z13 w1415948208
+R2
+R3
+R4
+Z14 8C:/Users/MARCO/Altera Projects/Hw4/Q6/Reg.vhd
+Z15 FC:/Users/MARCO/Altera Projects/Hw4/Q6/Reg.vhd
+l0
+L4
+V:O<3Ge[mhgazMhGUToH][2
+R7
+31
+Z16 !s108 1415967649.725000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Q6/Reg.vhd|
+Z18 !s107 C:/Users/MARCO/Altera Projects/Hw4/Q6/Reg.vhd|
+R11
+R12
+!s100 0>J3LTQah[HVh7GKNgo`?2
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 3 reg 0 22 :O<3Ge[mhgazMhGUToH][2
+l14
+L12
+VKX68HTKTQ<oPUFdX_^mAD3
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 1@>7MV=HWh8o<OHl6mRZ91
+!i10b 1

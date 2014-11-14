@@ -1,0 +1,184 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do MISR_8_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/Reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/MISR_8.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MISR_8
+# -- Compiling architecture behavior of MISR_8
+# 
+vsim +altera -do MISR_8_run_msim_rtl_vhdl.do -l msim_transcript -gui work.misr_8
+# vsim +altera -do MISR_8_run_msim_rtl_vhdl.do -l msim_transcript -gui work.misr_8 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.misr_8(behavior)
+# Loading work.reg(behavior)
+# do MISR_8_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/Reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/MISR_8.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MISR_8
+# -- Compiling architecture behavior of MISR_8
+# 
+do {C:/Users/MARCO/Altera Projects/Hw4/Q6/simulation/modelsim/MISR_8_run_msim_rtl_vhdl.do}
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/Reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/MISR_8.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MISR_8
+# -- Compiling architecture behavior of MISR_8
+# 
+add wave -position end  sim:/misr_8/CLOCK_50
+add wave -position end  sim:/misr_8/Q
+add wave -position end  sim:/misr_8/Qint
+add wave -position end  sim:/misr_8/Z
+do {C:/Users/MARCO/Altera Projects/Hw4/Q6/simulation/Q6_MISR_test.do}
+# vsim +altera -do MISR_8_run_msim_rtl_vhdl.do -l msim_transcript -gui -t ns work.misr_8 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.misr_8(behavior)
+# Loading work.reg(behavior)
+# do MISR_8_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/Reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/MISR_8.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MISR_8
+# -- Compiling architecture behavior of MISR_8
+# 
+do {C:/Users/MARCO/Altera Projects/Hw4/Q6/simulation/Q6_MISR_test.do}
+# vsim +altera -do MISR_8_run_msim_rtl_vhdl.do -l msim_transcript -gui -t ns work.misr_8 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.misr_8(behavior)
+# Loading work.reg(behavior)
+# do MISR_8_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/Reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/MISR_8.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MISR_8
+# -- Compiling architecture behavior of MISR_8
+# 
+# ** Error: Value length (2) does not equal array index length (8).
+# 
+# ** Error: (vsim-4011) Invalid force value: 10#145 110, 10#32 160, 10#100 210, 10#35 260, 10#245 310, 10#2 360, 10#24 410, 10#30 460, 10.
+# Error in macro C:\Users\MARCO\Altera Projects\Hw4\Q6\simulation\Q6_MISR_test.do line 18
+# Value length (2) does not equal array index length (8).
+# 
+# ** Error: (vsim-4011) Invalid force value: 10#145 110, 10#32 160, 10#100 210, 10#35 260, 10#245 310, 10#2 360, 10#24 410, 10#30 460, 10.
+# 
+#     while executing
+# "force -deposit /Z 10#145 110, 10#32 160, 10#100 210, 10#35 260, 10#245 310, 10#2 360, 10#24 410, 10#30 460, 10"
+do {C:/Users/MARCO/Altera Projects/Hw4/Q6/simulation/Q6_MISR_test.do}
+# vsim +altera -do MISR_8_run_msim_rtl_vhdl.do -l msim_transcript -gui -t ns work.misr_8 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.misr_8(behavior)
+# Loading work.reg(behavior)
+# do MISR_8_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/Reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# vcom -93 -work work {C:/Users/MARCO/Altera Projects/Hw4/Q6/MISR_8.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MISR_8
+# -- Compiling architecture behavior of MISR_8
+# 

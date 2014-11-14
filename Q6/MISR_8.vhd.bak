@@ -1,0 +1,19 @@
+entity MISR_8 is
+	port(	clk	:	in	 std_logic;
+			Z		:	in	 std_logic_vector(7 downto 0);
+			Q		:	out std_logic_vector(7 downto 0)
+		  );
+end MISR_8;
+
+architecture behavior of MISR_8 is
+
+component Reg
+	port(	clk : in  std_logic;
+			D	 :	in  std_logic;
+			Q	 :	out std_logic			
+		  );
+begin
+
+
+
+end behavior;

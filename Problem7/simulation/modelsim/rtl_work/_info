@@ -1,0 +1,198 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\MARCO\Altera Projects\Hw4\Problem7\simulation\modelsim
+Efulladder
+Z1 w1415941133
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dC:\Users\MARCO\Altera Projects\Hw4\Problem7\simulation\modelsim
+Z8 8C:/Users/MARCO/Altera Projects/Hw4/Problem7/FullAdder.vhd
+Z9 FC:/Users/MARCO/Altera Projects/Hw4/Problem7/FullAdder.vhd
+l0
+L6
+VES6RX`j]SF_1iFAg:nTZ@0
+Z10 OV;C;10.1d;51
+31
+Z11 !s108 1415968180.267000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Problem7/FullAdder.vhd|
+Z13 !s107 C:/Users/MARCO/Altera Projects/Hw4/Problem7/FullAdder.vhd|
+Z14 o-93 -work work -O0
+Z15 tExplicit 1
+!s100 7ST5BKNWzHQ=`103d5W:o0
+!i10b 1
+Aequations
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 fulladder 0 22 ES6RX`j]SF_1iFAg:nTZ@0
+l16
+L15
+VeBS_FdL1Z6;2a6fn4kCVe3
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 Z`Ui4UHo3N:LPa;;7mYRO1
+!i10b 1
+Ehalfadder
+Z16 w1415946766
+R2
+R3
+R4
+R5
+R6
+R7
+Z17 8C:/Users/MARCO/Altera Projects/Hw4/Problem7/HalfAdder.vhd
+Z18 FC:/Users/MARCO/Altera Projects/Hw4/Problem7/HalfAdder.vhd
+l0
+L6
+Vl^n_:lDJb^ec5WT;VWFIn3
+!s100 j<fcS`ngRUXl;eAUXb0I91
+R10
+31
+!i10b 1
+Z19 !s108 1415968180.447000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Problem7/HalfAdder.vhd|
+Z21 !s107 C:/Users/MARCO/Altera Projects/Hw4/Problem7/HalfAdder.vhd|
+R14
+R15
+Aequations
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 halfadder 0 22 l^n_:lDJb^ec5WT;VWFIn3
+l15
+L14
+V5;>8m_jm5D=S?=n3RLEln3
+!s100 HWG@GHNRYPn?1<OENel=Y2
+R10
+31
+!i10b 1
+R19
+R20
+R21
+R14
+R15
+Eproblem_4_30
+Z22 w1415949247
+R2
+R3
+R4
+R5
+R6
+R7
+Z23 8C:/Users/MARCO/Altera Projects/Hw4/Problem7/Problem_4_30.vhd
+Z24 FC:/Users/MARCO/Altera Projects/Hw4/Problem7/Problem_4_30.vhd
+l0
+L6
+V?iWU;oTGbh4<k?i7ZG:bT3
+R10
+31
+Z25 !s108 1415968179.732000
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Problem7/Problem_4_30.vhd|
+Z27 !s107 C:/Users/MARCO/Altera Projects/Hw4/Problem7/Problem_4_30.vhd|
+R14
+R15
+!s100 Ic__n?2YAUg;FIk2]_VRg3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 12 problem_4_30 0 22 ?iWU;oTGbh4<k?i7ZG:bT3
+l56
+L14
+VjU<WjhDTTXML29[l:T]UC1
+R10
+31
+R25
+R26
+R27
+R14
+R15
+!s100 ^KilG0fn@9Qzf=6GVmz=I3
+!i10b 1
+Ereg_4
+Z28 w1415947899
+R5
+R6
+R7
+Z29 8C:/Users/MARCO/Altera Projects/Hw4/Problem7/Reg_4.vhd
+Z30 FC:/Users/MARCO/Altera Projects/Hw4/Problem7/Reg_4.vhd
+l0
+L4
+VkUN^Kj^YYel?L^R>zAIjK0
+R10
+31
+Z31 !s108 1415968180.108000
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Problem7/Reg_4.vhd|
+Z33 !s107 C:/Users/MARCO/Altera Projects/Hw4/Problem7/Reg_4.vhd|
+R14
+R15
+!s100 ]N@GHKOmffZUS@RoT3fzP1
+!i10b 1
+Abehavioral
+R5
+R6
+DEx4 work 5 reg_4 0 22 kUN^Kj^YYel?L^R>zAIjK0
+l12
+L11
+Vok3?NK:I9fIn?I5[S;RiC0
+R10
+31
+R31
+R32
+R33
+R14
+R15
+!s100 5nCzA1Ab6NAkkaWll874[2
+!i10b 1
+Ereg_8
+R28
+R5
+R6
+R7
+Z34 8C:/Users/MARCO/Altera Projects/Hw4/Problem7/Reg_8.vhd
+Z35 FC:/Users/MARCO/Altera Projects/Hw4/Problem7/Reg_8.vhd
+l0
+L4
+V^z=_hWhVHZFQ`dkWf`;jS1
+R10
+31
+Z36 !s108 1415968179.950000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Problem7/Reg_8.vhd|
+Z38 !s107 C:/Users/MARCO/Altera Projects/Hw4/Problem7/Reg_8.vhd|
+R14
+R15
+!s100 <;3FKgUKHNShZaGj8LV^50
+!i10b 1
+Abehavioral
+R5
+R6
+DEx4 work 5 reg_8 0 22 ^z=_hWhVHZFQ`dkWf`;jS1
+l12
+L11
+V3kn:3JIoM12zZb5`bH5h;2
+R10
+31
+R36
+R37
+R38
+R14
+R15
+!s100 9fmcG7V9:Ul:dUYmi@8>m1
+!i10b 1

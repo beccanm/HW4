@@ -1,0 +1,16 @@
+entity Reg is
+	port(	D	 :	in  std_logic;
+			Q	 :	out std_logic;
+			clk : in  std_logic
+		  );
+end Reg;
+
+
+architecture behavior of Reg is
+begin
+process (clk)
+begin
+	if (rising_edge(<clock_signal>)) then
+		<register_variable> <= <data>;
+	end if;
+end process;
