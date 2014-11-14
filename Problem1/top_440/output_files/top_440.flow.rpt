@@ -1,5 +1,5 @@
 Flow report for top_440
-Tue Nov 11 08:10:12 2014
+Thu Nov 13 17:57:32 2014
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 11 08:10:03 2014           ;
+; Flow Status                        ; Successful - Thu Nov 13 17:57:25 2014           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; top_440                                         ;
 ; Top-level Entity Name              ; top_440                                         ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/11/2014 08:08:51 ;
+; Start date & time ; 11/13/2014 17:56:19 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top_440             ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 255726481347966.141571493011528       ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 255726481347966.141592297908708       ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                     ; --            ; --          ; --         ;
@@ -88,7 +88,7 @@ applicable agreement for further details.
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --         ;
-; STATE_MACHINE_PROCESSING            ; One-Hot                               ; Auto          ; --          ; --         ;
+; STATE_MACHINE_PROCESSING            ; Minimal Bits                          ; Auto          ; --          ; --         ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 
 
@@ -98,10 +98,10 @@ applicable agreement for further details.
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 495 MB              ; 00:00:05                           ;
-; Fitter                    ; 00:00:48     ; 1.0                     ; 852 MB              ; 00:00:47                           ;
+; Fitter                    ; 00:00:45     ; 1.0                     ; 853 MB              ; 00:00:44                           ;
 ; Assembler                 ; 00:00:13     ; 1.0                     ; 442 MB              ; 00:00:13                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 518 MB              ; 00:00:07                           ;
-; Total                     ; 00:01:13     ; --                      ; --                  ; 00:01:12                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 519 MB              ; 00:00:07                           ;
+; Total                     ; 00:01:09     ; --                      ; --                  ; 00:01:09                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

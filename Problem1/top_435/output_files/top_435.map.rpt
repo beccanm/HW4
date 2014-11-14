@@ -1,6 +1,6 @@
 Analysis & Synthesis report for top_435
-Tue Nov 11 08:08:18 2014
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Thu Nov 13 17:38:26 2014
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -42,8 +42,8 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 11 08:08:18 2014           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 13 17:38:26 2014           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; top_435                                         ;
 ; Top-level Entity Name              ; top_435                                         ;
 ; Family                             ; Cyclone IV E                                    ;
@@ -68,6 +68,7 @@ applicable agreement for further details.
 ; Top-level entity name                                                      ; top_435            ; top_435            ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; State Machine Processing                                                   ; One-Hot            ; Auto               ;
+; Optimization Technique                                                     ; Area               ; Balanced           ;
 ; Perform WYSIWYG Primitive Resynthesis                                      ; On                 ; Off                ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -99,7 +100,6 @@ applicable agreement for further details.
 ; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
 ; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
 ; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
-; Optimization Technique                                                     ; Balanced           ; Balanced           ;
 ; Carry Chain Length                                                         ; 70                 ; 70                 ;
 ; Auto Carry Chains                                                          ; On                 ; On                 ;
 ; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
@@ -175,9 +175,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;          ;
 ; Total combinational functions               ; 29       ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 9        ;
-;     -- 3 input functions                    ; 15       ;
-;     -- <=2 input functions                  ; 5        ;
+;     -- 4 input functions                    ; 10       ;
+;     -- 3 input functions                    ; 13       ;
+;     -- <=2 input functions                  ; 6        ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
 ;     -- normal mode                          ; 25       ;
@@ -239,7 +239,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -247,27 +247,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 11 08:08:11 2014
+    Info: Processing started: Thu Nov 13 17:38:21 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top_435 -c top_435
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file top_435.vhd
     Info (12022): Found design unit 1: top_435-behave1
     Info (12023): Found entity 1: top_435
 Info (12127): Elaborating entity "top_435" for the top level hierarchy
-Info (17026): Resynthesizing 0 WYSIWYG logic cells and I/Os using "balanced" technology mapper which leaves 0 WYSIWYG logic cells and I/Os untouched
-Info (286030): Timing-Driven Synthesis is running
+Info (17026): Resynthesizing 0 WYSIWYG logic cells and I/Os using "area" technology mapper which leaves 0 WYSIWYG logic cells and I/Os untouched
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 47 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 29 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 384 megabytes
-    Info: Processing ended: Tue Nov 11 08:08:18 2014
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:06
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 495 megabytes
+    Info: Processing ended: Thu Nov 13 17:38:26 2014
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 

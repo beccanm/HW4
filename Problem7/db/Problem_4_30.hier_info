@@ -1,0 +1,191 @@
+|Problem_4_30
+X[0] => XY0.IN0
+X[0] => XY1[0].IN0
+X[0] => XY2[0].IN0
+X[0] => XY3[0].IN0
+X[1] => XY0[1].IN0
+X[1] => XY1[1].IN0
+X[1] => XY2[1].IN0
+X[1] => XY3[1].IN0
+X[2] => XY0[2].IN0
+X[2] => XY1[2].IN0
+X[2] => XY2[2].IN0
+X[2] => XY3[2].IN0
+X[3] => XY0[3].IN0
+X[3] => XY1[3].IN0
+X[3] => XY2[3].IN0
+X[3] => XY3[3].IN0
+Y[0] => XY0.IN1
+Y[0] => XY0[1].IN1
+Y[0] => XY0[2].IN1
+Y[0] => XY0[3].IN1
+Y[1] => XY1[0].IN1
+Y[1] => XY1[1].IN1
+Y[1] => XY1[2].IN1
+Y[1] => XY1[3].IN1
+Y[2] => XY2[0].IN1
+Y[2] => XY2[1].IN1
+Y[2] => XY2[2].IN1
+Y[2] => XY2[3].IN1
+Y[3] => XY3[0].IN1
+Y[3] => XY3[1].IN1
+Y[3] => XY3[2].IN1
+Y[3] => XY3[3].IN1
+P[0] <= XY0.DB_MAX_OUTPUT_PORT_TYPE
+P[1] <= HalfAdder:HA1.Sum
+P[2] <= HalfAdder:HA3.Sum
+P[3] <= HalfAdder:HA4.Sum
+P[4] <= FullAdder:FA6.Sum
+P[5] <= FullAdder:FA7.Sum
+P[6] <= FullAdder:FA8.Sum
+P[7] <= FullAdder:FA8.Cout
+
+
+|Problem_4_30|FullAdder:FA1
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA2
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA3
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA4
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA5
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA6
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA7
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|FullAdder:FA8
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|HalfAdder:HA1
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|HalfAdder:HA2
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|HalfAdder:HA3
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|HalfAdder:HA4
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
