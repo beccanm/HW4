@@ -15,16 +15,21 @@ force -deposit /X 10#0
 force -deposit /Y 10#0 
 
 # (110-160ns) set X = 10, Y = 5 
-force -deposit /X 10#10 110
-force -deposit /Y 10#5 110
+force -deposit /X 10#6 110
+force -deposit /Y 10#8 110
 
 # (160-210ns) set X = 14, Y = 3 
-force -deposit /X 10#14 160
-force -deposit /Y 10#3 160
+force -deposit /X 10#11 160
+force -deposit /Y 10#12 160
 
 # (210-260ns) set X = 15, Y = 15 
-force -deposit /X 10#15 210
+force -deposit /X 10#14 210
 force -deposit /Y 10#15 210
 
+# (260-310ns) set X = 15, Y = 15 
+force -deposit /X 10#13 260
+force -deposit /Y 10#0 260
+
+
 # run simulation
-run 400
+run 600

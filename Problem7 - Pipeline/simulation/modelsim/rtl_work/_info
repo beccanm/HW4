@@ -18,7 +18,7 @@ L6
 V^^ZajJ`RJ^e?GCkRPU1QP1
 Z10 OV;C;10.1d;51
 31
-Z11 !s108 1415963643.008000
+Z11 !s108 1415968996.117000
 Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/dff1.vhd|
 Z13 !s107 C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/dff1.vhd|
 Z14 o-93 -work work -O0
@@ -59,7 +59,7 @@ L6
 VES6RX`j]SF_1iFAg:nTZ@0
 R10
 31
-Z19 !s108 1415963643.695000
+Z19 !s108 1415968996.804000
 Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/FullAdder.vhd|
 Z21 !s107 C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/FullAdder.vhd|
 R14
@@ -102,7 +102,7 @@ Vl^n_:lDJb^ec5WT;VWFIn3
 R10
 31
 !i10b 1
-Z25 !s108 1415963643.876000
+Z25 !s108 1415968996.991000
 Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/HalfAdder.vhd|
 Z27 !s107 C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/HalfAdder.vhd|
 R14
@@ -127,7 +127,7 @@ R27
 R14
 R15
 Eproblem_4_30
-Z28 w1415962152
+Z28 w1415968766
 R2
 R3
 R4
@@ -141,7 +141,7 @@ L6
 V?iWU;oTGbh4<k?i7ZG:bT3
 R10
 31
-Z31 !s108 1415963643.187000
+Z31 !s108 1415968996.304000
 Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/Problem_4_30.vhd|
 Z33 !s107 C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/Problem_4_30.vhd|
 R14
@@ -155,9 +155,9 @@ R4
 R5
 R6
 DEx4 work 12 problem_4_30 0 22 ?iWU;oTGbh4<k?i7ZG:bT3
-l105
+l107
 L14
-Vg<F^b[MeI?4zd>7EO1Q:l1
+VUVo7I9n=Pgm10ajNJL9j;3
 R10
 31
 R31
@@ -165,7 +165,7 @@ R32
 R33
 R14
 R15
-!s100 [0=hHJV5X5f5o`FLBG[hZ3
+!s100 iKRi[Wnj0:a:m@jl20P0n3
 !i10b 1
 Ereg_4
 Z34 w1415947899
@@ -179,7 +179,7 @@ L4
 VkUN^Kj^YYel?L^R>zAIjK0
 R10
 31
-Z37 !s108 1415963643.536000
+Z37 !s108 1415968996.648000
 Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/Reg_4.vhd|
 Z39 !s107 C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/Reg_4.vhd|
 R14
@@ -214,7 +214,7 @@ L4
 V^z=_hWhVHZFQ`dkWf`;jS1
 R10
 31
-Z42 !s108 1415963643.375000
+Z42 !s108 1415968996.492000
 Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/Reg_8.vhd|
 Z44 !s107 C:/Users/MARCO/Altera Projects/Hw4/Problem7 - Pipeline/Reg_8.vhd|
 R14

@@ -55,7 +55,6 @@ end component;
 
 begin
   
-  -- INPUT REGISTERS 
   
   Reg_Xin : Reg_4 port map (
   clk   =>  CLOCK_50,
