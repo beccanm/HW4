@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Problem_4_30
-Wed Nov 12 10:58:10 2014
+Fri Nov 14 01:08:02 2014
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,8 +14,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Reg_4:Reg_Xin
+ 10. Parameter Settings for User Entity Instance: Reg_4:Reg_Yin
+ 11. Parameter Settings for User Entity Instance: Reg_8:Reg_Product_Out
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +44,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 12 10:58:10 2014           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 14 01:08:02 2014           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Problem_4_30                                    ;
 ; Top-level Entity Name              ; Problem_4_30                                    ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 31                                              ;
-;     Total combinational functions  ; 31                                              ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 16                                              ;
+; Total logic elements               ; 41                                              ;
+;     Total combinational functions  ; 33                                              ;
+;     Dedicated logic registers      ; 16                                              ;
+; Total registers                    ; 16                                              ;
+; Total pins                         ; 17                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -162,57 +165,64 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                 ; Library ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------+---------+
 ; Problem_4_30.vhd                 ; yes             ; User VHDL File  ; C:/Users/MARCO/Altera Projects/Hw4/Problem7/Problem_4_30.vhd ;         ;
+; Reg_8.vhd                        ; yes             ; User VHDL File  ; C:/Users/MARCO/Altera Projects/Hw4/Problem7/Reg_8.vhd        ;         ;
+; Reg_4.vhd                        ; yes             ; User VHDL File  ; C:/Users/MARCO/Altera Projects/Hw4/Problem7/Reg_4.vhd        ;         ;
+; FullAdder.vhd                    ; yes             ; User VHDL File  ; C:/Users/MARCO/Altera Projects/Hw4/Problem7/FullAdder.vhd    ;         ;
+; HalfAdder.vhd                    ; yes             ; User VHDL File  ; C:/Users/MARCO/Altera Projects/Hw4/Problem7/HalfAdder.vhd    ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimated Total logic elements              ; 31         ;
-;                                             ;            ;
-; Total combinational functions               ; 31         ;
-; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 18         ;
-;     -- 3 input functions                    ; 4          ;
-;     -- <=2 input functions                  ; 9          ;
-;                                             ;            ;
-; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 31         ;
-;     -- arithmetic mode                      ; 0          ;
-;                                             ;            ;
-; Total registers                             ; 0          ;
-;     -- Dedicated logic registers            ; 0          ;
-;     -- I/O registers                        ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 16         ;
-; Embedded Multiplier 9-bit elements          ; 0          ;
-; Maximum fan-out node                        ; X[0]~input ;
-; Maximum fan-out                             ; 7          ;
-; Total fan-out                               ; 126        ;
-; Average fan-out                             ; 2.00       ;
-+---------------------------------------------+------------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 41             ;
+;                                             ;                ;
+; Total combinational functions               ; 33             ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 21             ;
+;     -- 3 input functions                    ; 3              ;
+;     -- <=2 input functions                  ; 9              ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 33             ;
+;     -- arithmetic mode                      ; 0              ;
+;                                             ;                ;
+; Total registers                             ; 16             ;
+;     -- Dedicated logic registers            ; 16             ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 17             ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 16             ;
+; Total fan-out                               ; 168            ;
+; Average fan-out                             ; 2.02           ;
++---------------------------------------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                 ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
-; |Problem_4_30              ; 31 (9)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |Problem_4_30               ; work         ;
-;    |FullAdder:FA1|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA1 ; work         ;
-;    |FullAdder:FA2|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA2 ; work         ;
-;    |FullAdder:FA3|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA3 ; work         ;
-;    |FullAdder:FA4|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA4 ; work         ;
-;    |FullAdder:FA5|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA5 ; work         ;
-;    |FullAdder:FA6|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA6 ; work         ;
-;    |FullAdder:FA7|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA7 ; work         ;
-;    |FullAdder:FA8|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA8 ; work         ;
-;    |HalfAdder:HA1|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|HalfAdder:HA1 ; work         ;
-;    |HalfAdder:HA3|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|HalfAdder:HA3 ; work         ;
-;    |HalfAdder:HA4|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|HalfAdder:HA4 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
+; |Problem_4_30              ; 33 (9)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |Problem_4_30                       ; work         ;
+;    |FullAdder:FA1|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA1         ; work         ;
+;    |FullAdder:FA2|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA2         ; work         ;
+;    |FullAdder:FA3|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA3         ; work         ;
+;    |FullAdder:FA4|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA4         ; work         ;
+;    |FullAdder:FA5|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA5         ; work         ;
+;    |FullAdder:FA6|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA6         ; work         ;
+;    |FullAdder:FA7|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA7         ; work         ;
+;    |FullAdder:FA8|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|FullAdder:FA8         ; work         ;
+;    |HalfAdder:HA1|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|HalfAdder:HA1         ; work         ;
+;    |HalfAdder:HA3|         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|HalfAdder:HA3         ; work         ;
+;    |HalfAdder:HA4|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|HalfAdder:HA4         ; work         ;
+;    |Reg_4:Reg_Xin|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|Reg_4:Reg_Xin         ; work         ;
+;    |Reg_4:Reg_Yin|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|Reg_4:Reg_Yin         ; work         ;
+;    |Reg_8:Reg_Product_Out| ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Problem_4_30|Reg_8:Reg_Product_Out ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -221,7 +231,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 16    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -229,6 +239,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Reg_4:Reg_Xin ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 4     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Reg_4:Reg_Yin ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 4     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Reg_8:Reg_Product_Out ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; n              ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------+
@@ -246,30 +286,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Nov 12 10:58:04 2014
+    Info: Processing started: Fri Nov 14 01:07:57 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Problem_4_30 -c Problem_4_30
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 6 design units, including 3 entities, in source file problem_4_30.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file problem_4_30.vhd
     Info (12022): Found design unit 1: Problem_4_30-Behavioral
-    Info (12022): Found design unit 2: FullAdder-equations
-    Info (12022): Found design unit 3: HalfAdder-equations
     Info (12023): Found entity 1: Problem_4_30
-    Info (12023): Found entity 2: FullAdder
-    Info (12023): Found entity 3: HalfAdder
+Info (12021): Found 2 design units, including 1 entities, in source file reg_8.vhd
+    Info (12022): Found design unit 1: Reg_8-behavioral
+    Info (12023): Found entity 1: Reg_8
+Info (12021): Found 2 design units, including 1 entities, in source file reg_4.vhd
+    Info (12022): Found design unit 1: Reg_4-behavioral
+    Info (12023): Found entity 1: Reg_4
+Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
+    Info (12022): Found design unit 1: FullAdder-equations
+    Info (12023): Found entity 1: FullAdder
+Info (12021): Found 2 design units, including 1 entities, in source file halfadder.vhd
+    Info (12022): Found design unit 1: HalfAdder-equations
+    Info (12023): Found entity 1: HalfAdder
 Info (12127): Elaborating entity "Problem_4_30" for the top level hierarchy
+Info (12128): Elaborating entity "Reg_4" for hierarchy "Reg_4:Reg_Xin"
+Info (12128): Elaborating entity "Reg_8" for hierarchy "Reg_8:Reg_Product_Out"
 Info (12128): Elaborating entity "FullAdder" for hierarchy "FullAdder:FA1"
 Info (12128): Elaborating entity "HalfAdder" for hierarchy "HalfAdder:HA1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 47 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
+Info (21057): Implemented 58 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 31 logic cells
+    Info (21061): Implemented 41 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 499 megabytes
-    Info: Processing ended: Wed Nov 12 10:58:10 2014
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 503 megabytes
+    Info: Processing ended: Fri Nov 14 01:08:02 2014
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
 

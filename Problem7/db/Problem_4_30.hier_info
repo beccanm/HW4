@@ -1,44 +1,80 @@
 |Problem_4_30
-X[0] => XY0.IN0
-X[0] => XY1[0].IN0
-X[0] => XY2[0].IN0
-X[0] => XY3[0].IN0
-X[1] => XY0[1].IN0
-X[1] => XY1[1].IN0
-X[1] => XY2[1].IN0
-X[1] => XY3[1].IN0
-X[2] => XY0[2].IN0
-X[2] => XY1[2].IN0
-X[2] => XY2[2].IN0
-X[2] => XY3[2].IN0
-X[3] => XY0[3].IN0
-X[3] => XY1[3].IN0
-X[3] => XY2[3].IN0
-X[3] => XY3[3].IN0
-Y[0] => XY0.IN1
-Y[0] => XY0[1].IN1
-Y[0] => XY0[2].IN1
-Y[0] => XY0[3].IN1
-Y[1] => XY1[0].IN1
-Y[1] => XY1[1].IN1
-Y[1] => XY1[2].IN1
-Y[1] => XY1[3].IN1
-Y[2] => XY2[0].IN1
-Y[2] => XY2[1].IN1
-Y[2] => XY2[2].IN1
-Y[2] => XY2[3].IN1
-Y[3] => XY3[0].IN1
-Y[3] => XY3[1].IN1
-Y[3] => XY3[2].IN1
-Y[3] => XY3[3].IN1
-P[0] <= XY0.DB_MAX_OUTPUT_PORT_TYPE
-P[1] <= HalfAdder:HA1.Sum
-P[2] <= HalfAdder:HA3.Sum
-P[3] <= HalfAdder:HA4.Sum
-P[4] <= FullAdder:FA6.Sum
-P[5] <= FullAdder:FA7.Sum
-P[6] <= FullAdder:FA8.Sum
-P[7] <= FullAdder:FA8.Cout
+CLOCK_50 => Reg_4:Reg_Xin.clk
+CLOCK_50 => Reg_4:Reg_Yin.clk
+CLOCK_50 => Reg_8:Reg_Product_Out.clk
+X[0] => Reg_4:Reg_Xin.d_in[0]
+X[1] => Reg_4:Reg_Xin.d_in[1]
+X[2] => Reg_4:Reg_Xin.d_in[2]
+X[3] => Reg_4:Reg_Xin.d_in[3]
+Y[0] => Reg_4:Reg_Yin.d_in[0]
+Y[1] => Reg_4:Reg_Yin.d_in[1]
+Y[2] => Reg_4:Reg_Yin.d_in[2]
+Y[3] => Reg_4:Reg_Yin.d_in[3]
+P[0] <= Reg_8:Reg_Product_Out.d_out[0]
+P[1] <= Reg_8:Reg_Product_Out.d_out[1]
+P[2] <= Reg_8:Reg_Product_Out.d_out[2]
+P[3] <= Reg_8:Reg_Product_Out.d_out[3]
+P[4] <= Reg_8:Reg_Product_Out.d_out[4]
+P[5] <= Reg_8:Reg_Product_Out.d_out[5]
+P[6] <= Reg_8:Reg_Product_Out.d_out[6]
+P[7] <= Reg_8:Reg_Product_Out.d_out[7]
+
+
+|Problem_4_30|Reg_4:Reg_Xin
+clk => d_out[0]~reg0.CLK
+clk => d_out[1]~reg0.CLK
+clk => d_out[2]~reg0.CLK
+clk => d_out[3]~reg0.CLK
+d_in[0] => d_out[0]~reg0.DATAIN
+d_in[1] => d_out[1]~reg0.DATAIN
+d_in[2] => d_out[2]~reg0.DATAIN
+d_in[3] => d_out[3]~reg0.DATAIN
+d_out[0] <= d_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[1] <= d_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[2] <= d_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[3] <= d_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|Reg_4:Reg_Yin
+clk => d_out[0]~reg0.CLK
+clk => d_out[1]~reg0.CLK
+clk => d_out[2]~reg0.CLK
+clk => d_out[3]~reg0.CLK
+d_in[0] => d_out[0]~reg0.DATAIN
+d_in[1] => d_out[1]~reg0.DATAIN
+d_in[2] => d_out[2]~reg0.DATAIN
+d_in[3] => d_out[3]~reg0.DATAIN
+d_out[0] <= d_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[1] <= d_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[2] <= d_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[3] <= d_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Problem_4_30|Reg_8:Reg_Product_Out
+clk => d_out[0]~reg0.CLK
+clk => d_out[1]~reg0.CLK
+clk => d_out[2]~reg0.CLK
+clk => d_out[3]~reg0.CLK
+clk => d_out[4]~reg0.CLK
+clk => d_out[5]~reg0.CLK
+clk => d_out[6]~reg0.CLK
+clk => d_out[7]~reg0.CLK
+d_in[0] => d_out[0]~reg0.DATAIN
+d_in[1] => d_out[1]~reg0.DATAIN
+d_in[2] => d_out[2]~reg0.DATAIN
+d_in[3] => d_out[3]~reg0.DATAIN
+d_in[4] => d_out[4]~reg0.DATAIN
+d_in[5] => d_out[5]~reg0.DATAIN
+d_in[6] => d_out[6]~reg0.DATAIN
+d_in[7] => d_out[7]~reg0.DATAIN
+d_out[0] <= d_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[1] <= d_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[2] <= d_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[3] <= d_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[4] <= d_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[5] <= d_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[6] <= d_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[7] <= d_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Problem_4_30|FullAdder:FA1

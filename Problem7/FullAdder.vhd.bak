@@ -1,0 +1,23 @@
+-- Full Adder and half adder entity and architecture descriptions
+-- should be in the project
+entity FullAdder is 
+  port(X, Y, Cin: in std_logic;
+       Cout, Sum: out std_logic);
+end FullAdder;
+
+architecture equations of FullAdder is
+begin
+  Sum <= X xor Y xor Cin;
+  Cout <= (X and Y) or (X and Cin) or (Y and Cin);
+end equations;
+
+entity HalfAdder is 
+  port(X, Y: in std_logic;
+       Cout, Sum: out std_logic);
+end HalfAdder;
+
+architecture equations of HalfAdder is
+begin
+  Sum <= X xor Y;
+  Cout <= X and Y;
+end equations;
